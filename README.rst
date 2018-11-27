@@ -10,10 +10,11 @@
 This repository aims to provide simple and ready-to-use tutorials for TensorFlow.
 Each tutorial includes ``source code`` and most of them are associated with a ``documentation``.
 
-.. image:: _img/mainpage/TensorFlow_World.gif
+.. .. image:: _img/mainpage/TensorFlow_World.gif
 
 .. The links.
 .. _TensorFlow: https://www.tensorflow.org/install/
+.. _Wikipedia: https://en.wikipedia.org/wiki/TensorFlow/
 
 #################
 Table of Contents
@@ -21,6 +22,15 @@ Table of Contents
 .. contents::
   :local:
   :depth: 3
+
+~~~~~~~~~~~~~~~~~~~~~
+What is TensorFlow?
+~~~~~~~~~~~~~~~~~~~~~
+TensorFlow is an open-source software library for dataflow programming across a range of tasks. It is a symbolic math library, and is also used for machine learning applications such as neural networks. It is used for both research and production at Google often replacing its closed-source predecessor, DistBelief.
+
+TensorFlow was developed by the Google Brain team for internal Google use. It was released under the Apache 2.0 open source license on November 9, 2015.
+
+The current stable release as of September 27, 2018 is 1.11.0
 
 ============
 Motivation
@@ -36,7 +46,7 @@ Deep Learning is in very high interest these days - there's a crucial need for r
 
 The strong advantage of TensorFlow is it flexibility in designing highly modular models which can also be a disadvantage for beginners since a lot of the pieces must be considered together when creating the model.
 
-This issue has been facilitated as well by developing high-level APIs such as `Keras <https://keras.io/>`_ and `Slim <https://github.com/tensorflow/models/blob/master/inception/inception/slim/README.md//>`_ which abstract a lot of the pieces used in designing machine learning algorithms.
+This issue has been facilitated as well by developing high-level APIs such as `Keras <https://keras.io/>`_ and `Slim <https://github.com/tensorflow/models/blob/031a5a4ab41170d555bc3e8f8545cf9c8e3f1b28/research/inception/inception/slim/README.md>`_ which abstract a lot of the pieces used in designing machine learning algorithms.
 
 The interesting thing about TensorFlow is that **it can be found anywhere these days**. Lots of the researchers and developers are using it and *its community is growing at the speed of light*! So many issues can be dealt with easily since they're usually the same issues that a lot of other people run into considering the large number of people involved in the TensorFlow community.
 
@@ -170,13 +180,10 @@ Neural Networks
 +====+===================================+===============================================================================================+==============================================+
 | 8  | *Multi Layer Perceptron*          |`Simple Multi Layer Perceptron`_   / `IPython <MultiLayerPerceptronipython_>`_                 |                                              |
 +----+-----------------------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------+
-| 9  | *Convolutional Neural Networks*   | `Simple Convolutional Neural Networks`_                                                       |       `Documentation <Documentationcnn_>`_   |
+| 9  | *Convolutional Neural Network*    | `Simple Convolutional Neural Networks`_                                                       |       `Documentation <Documentationcnn_>`_   |
 +----+-----------------------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------+
-| 10 | *Autoencoders*                    | `Undercomplete Autoencoder <udercompleteautoencodercode_>`_                                   |       `Documentation <Documentationauto_>`_  |
+| 10 | *Recurrent Neural Network*        | `RNN`_  / `IPython <RNNIpython_>`_                                                            |                                              |
 +----+-----------------------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------+
-| 10 | *Recurrent Neural Networks*       | `RNN`_  / `IPython <RNNIpython_>`_                                                            |                                              |
-+----+-----------------------------------+-----------------------------------------------------------------------------------------------+----------------------------------------------+
-
 
 .. ~~~~~~~~~~~~
 .. **Welcome**
@@ -184,9 +191,9 @@ Neural Networks
 
 .. The tutorial in this section is just a simple entrance to TensorFlow.
 
-.. _welcomesourcecode: codes/0-welcome
+.. _welcomesourcecode: codes/python/0-welcome
 .. _Documentationcnnwelcome: docs/tutorials/0-welcome
-.. _ipythonwelcome: codes/0-welcome/code/0-welcome.ipynb
+.. _ipythonwelcome: codes/ipython/0-welcome/code/0-welcome.ipynb
 
 
 
@@ -201,12 +208,12 @@ Neural Networks
 .. ~~~~~~~~~~
 .. These tutorials are related to basics of TensorFlow.
 
-.. _basicmathsourcecode: codes/1-basics/basic_math_operations
+.. _basicmathsourcecode: codes/python/1-basics/basic_math_operations
 .. _Documentationbasicmath: docs/tutorials/1-basics/basic_math_operations
-.. _ipythonbasicmath: codes/1-basics/basic_math_operations/code/basic_math_operation.ipynb
+.. _ipythonbasicmath: codes/ipython/1-basics/basic_math_operations/code/basic_math_operation.ipynb
 
-.. _ipythonvariabls: codes/1-basics/variables/code/variables.ipynb
-.. _variablssourcecode: codes/1-basics/variables/README.rst
+.. _ipythonvariabls: codes/ipython/1-basics/variables/code/variables.ipynb
+.. _variablssourcecode: codes/python/1-basics/variables/README.rst
 .. _Documentationvariabls: docs/tutorials/1-basics/variables
 
 
@@ -223,20 +230,20 @@ Neural Networks
 .. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. We are going to present concepts of basic machine learning models and methods and show how to implement them in Tensorflow.
 
-.. _Linear Regression: codes/2-basics_in_machine_learning/linear_regression
-.. _LinearRegressionipython: codes/2-basics_in_machine_learning/linear_regression/code/linear_regression.ipynb
+.. _Linear Regression: codes/python/2-basics_in_machine_learning/linear_regression
+.. _LinearRegressionipython: codes/ipython/2-basics_in_machine_learning/linear_regression/code/linear_regression.ipynb
 .. _Documentationlr: docs/tutorials/2-basics_in_machine_learning/linear_regression
 
-.. _Logistic Regression: codes/2-basics_in_machine_learning/logistic_regression
-.. _LogisticRegressionipython: codes/2-basics_in_machine_learning/logistic_regression/code/logistic_regression.ipynb
+.. _Logistic Regression: codes/python/2-basics_in_machine_learning/logistic_regression
+.. _LogisticRegressionipython: codes//ipython/2-basics_in_machine_learning/logistic_regression/code/logistic_regression.ipynb
 .. _LogisticRegDOC: docs/tutorials/2-basics_in_machine_learning/logistic_regression
 
-.. _Linear SVM: codes/2-basics_in_machine_learning/linear_svm
-.. _LinearSVMipython: codes/2-basics_in_machine_learning/linear_svm/code/linear_svm.ipynb
+.. _Linear SVM: codes/python/2-basics_in_machine_learning/linear_svm
+.. _LinearSVMipython: codes//ipython/2-basics_in_machine_learning/linear_svm/code/linear_svm.ipynb
 
 
-.. _MultiClass Kernel SVM: codes/2-basics_in_machine_learning/multiclass_svm
-.. _MultiClassKernelSVMipython: codes/2-basics_in_machine_learning/multiclass_svm/code/multiclass_svm.ipynb
+.. _MultiClass Kernel SVM: codes/python/2-basics_in_machine_learning/multiclass_svm
+.. _MultiClassKernelSVMipython: codes/ipython/2-basics_in_machine_learning/multiclass_svm/code/multiclass_svm.ipynb
 
 
 .. +---+---------------------------------------------+----------------------------------------+
@@ -256,18 +263,14 @@ Neural Networks
 .. ~~~~~~~~~~~~~~~~~~~
 .. The tutorials in this section are related to neural network architectures.
 
-.. _Simple Convolutional Neural Networks: codes/3-neural_networks/convolutional-neural-network
+.. _Simple Convolutional Neural Networks: codes/python/3-neural_networks/convolutional-neural-network
 .. _Documentationcnn: docs/tutorials/3-neural_network/convolutiona_neural_network
 
-.. _Simple Multi Layer Perceptron: codes/3-neural_networks/multi-layer-perceptron
-.. _MultiLayerPerceptronipython: codes/3-neural_networks/multi-layer-perceptron/code/train_mlp.ipynb
+.. _Simple Multi Layer Perceptron: codes/python/3-neural_networks/multi-layer-perceptron
+.. _MultiLayerPerceptronipython: codes/ipython/3-neural_networks/multi-layer-perceptron/code/train_mlp.ipynb
 
-
-.. _udercompleteautoencodercode: codes/3-neural_networks/undercomplete-autoencoder
-.. _Documentationauto: docs/tutorials/3-neural_network/autoencoder
-
-.. _RNN: codes/3-neural_networks/recurrent-neural-networks/code/rnn.py
-.. _RNNIpython: codes/3-neural_networks/recurrent-neural-networks/code/rnn.py
+.. _RNN: codes/python/3-neural_networks/recurrent-neural-networks/code/rnn.py
+.. _RNNIpython: codes/ipython/3-neural_networks/recurrent-neural-networks/code/rnn.ipynb
 
 
 .. +---+---------------------------------------------+----------------------------------------+
@@ -324,4 +327,3 @@ Acknowledgement
 ================
 
 I have taken huge efforts in this project for hopefully being a small part of TensorFlow world. However, it would not have been plausible without the kind support and help of my friend and colleague `Domenick Poster <https://github.com/vonclites/>`_ for his valuable advices. He helped me for having a better understanding of TensorFlow and my special appreciation goes to him.
-I would also like to thanks `Hadi Kazemi <http://www.hadikazemi.com/>`_ for his contribution to this code for developing `Undercomplete Autoencoders Tutorial <docs/tutorials/3-neural_network/autoencoder>`_.
